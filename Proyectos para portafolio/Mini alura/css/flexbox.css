@@ -1,0 +1,126 @@
+.headerPrincipal .container {
+    display: flex;
+    /*coloclar uno alado de otro*/
+    align-items: center;
+    /*alienados verticalmente*/
+    justify-content: space-between;
+    /*espacio entre los elemnetos*/
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*espacio alrededor de los items*/
+    width: 70%;
+    margin-right: 10%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    /* le damos un tamaño de altura para limitar a un tamaño especifico */
+    flex-wrap: wrap;
+    /* cuando pase de 250px que es nuestro limite pasa al la siguiente columna*/
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.videoSobre-video {
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
+}
+
+/* Aqui comienza los responsive*/
+@media  (max-width:768px) {
+
+
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .headerPrincipal-nav-link-app{
+     order: -1;   
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+}

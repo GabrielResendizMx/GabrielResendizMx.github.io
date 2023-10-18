@@ -1,0 +1,59 @@
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{  /*id*/
+    width:100% ; /*ancho*/
+
+}
+
+.principal{
+    background:#CCCCCC ;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center; /*texto alineado hacia donde*/  
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferanciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+h3{
+    text-align: center;
+}
+
+.items{  /*class*/
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
+
+/*CCS para nuestra home*/
+
+.banner{
+    width: 100%;
+}
